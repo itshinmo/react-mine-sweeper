@@ -1,16 +1,16 @@
-import { SvgContainer } from "utils";
+import IconContainer from "../components/IconContainer";
 
 const FlagIcon = () => {
   return (
-    <SvgContainer>
-      <svg id="flag" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-        <g id="color">
+    <IconContainer>
+      <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <g>
           <polygon
             fill="#d22f27"
             points="67 24 36 33.5 5 43 5 24 5 5 36 14.5 67 24"
           />
         </g>
-        <g id="line">
+        <g>
           <g>
             <polygon
               fill="none"
@@ -34,7 +34,7 @@ const FlagIcon = () => {
           </g>
         </g>
       </svg>
-    </SvgContainer>
+    </IconContainer>
   );
 };
 

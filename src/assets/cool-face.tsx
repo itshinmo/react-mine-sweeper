@@ -1,14 +1,10 @@
-import { SvgContainer } from "utils";
+import IconContainer from "../components/IconContainer";
 
 const CoolFaceIcon = () => {
   return (
-    <SvgContainer>
-      <svg
-        id="cool-face"
-        viewBox="0 0 72 72"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g id="color">
+    <IconContainer>
+      <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <g>
           <circle cx="36" cy="36" r="23" fill="#FCEA2B" />
           <path
             fill="#3F3F3F"
@@ -19,10 +15,10 @@ const CoolFaceIcon = () => {
             d="M25.7384,38.5639c3.9628,0,7.1782-2.8618,7.1782-6.3889c0-1.7646,0.4473-3.5291-0.8519-4.6852 s-4.3449-1.7037-6.3264-1.7037c-2.3567,0-5.1428,0.1434-6.4514,1.7037c-0.8933,1.0652-0.7268,3.2534-0.7268,4.6852 C18.5602,35.7021,21.7729,38.5639,25.7384,38.5639z"
           />
         </g>
-        <g id="hair" />
-        <g id="skin" />
-        <g id="skin-shadow" />
-        <g id="line">
+        <g />
+        <g />
+        <g />
+        <g>
           <circle
             cx="35.8871"
             cy="36.0565"
@@ -108,7 +104,7 @@ const CoolFaceIcon = () => {
           />
         </g>
       </svg>
-    </SvgContainer>
+    </IconContainer>
   );
 };
 
