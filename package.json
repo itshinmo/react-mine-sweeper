@@ -1,45 +1,45 @@
 {
-  "name": "mine-sweeper",
+  "name": "react-mine-sweeper",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mohsen-shamsitabar.github.io/react-mine-sweeper",
+  "homepage": "https://itshinmo.github.io/react-mine-sweeper/",
+  "engines": {
+    "node": ">=22.18.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "typecheck": "tsc -b",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --config .eslintrc --max-warnings 0",
+    "test": "node --test --test-reporter=spec src/game/board.test.ts src/game/game.test.ts src/game/format-counter.test.ts",
+    "test:watch": "node --test --watch --test-reporter=spec src/game/board.test.ts src/game/game.test.ts src/game/format-counter.test.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.0",
     "@mui/material": "^6.1.1",
-    "deep-copy-ts": "^0.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.1",
+    "@types/node": "^24.0.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
-    "@vitejs/plugin-react-swc": "^3.3.2",
+    "@vitejs/plugin-react-swc": "^4.3.3",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "gh-pages": "^6.2.0",
-    "globals": "^15.9.0",
     "prettier": "^3.0.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.0",
-    "vite-tsconfig-paths": "^4.2.0"
+    "typescript": "^5.9.3",
+    "vite": "^6.4.0"
   }
 }
