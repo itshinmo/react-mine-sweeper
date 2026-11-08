@@ -64,6 +64,12 @@
         "project": ["./tsconfig.node.json"],
       },
     },
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "rules": {
+        "@typescript-eslint/no-floating-promises": "off",
+      },
+    },
   ],
   "settings": {
     "react": {
