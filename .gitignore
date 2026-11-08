@@ -13,6 +13,13 @@ dist-ssr
 *.local
 TODO.md
 
+# TypeScript build information
+*.tsbuildinfo
+
+# Generated Vite config output. These must never shadow vite.config.ts.
+vite.config.js
+vite.config.d.ts
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
