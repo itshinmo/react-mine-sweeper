@@ -1,7 +1,13 @@
-import { MineSweeper } from "views";
+import CssBaseline from "@mui/material/CssBaseline";
+import MineSweeper from "./components/MineSweeper";
 
-function App() {
-  return <MineSweeper />;
-}
+const App = () => {
+  return (
+    <>
+      <CssBaseline />
+      <MineSweeper />
+    </>
+  );
+};
 
 export default App;

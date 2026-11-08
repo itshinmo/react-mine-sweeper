@@ -1,5 +1,4 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import App from "App.tsx";
+import App from "./App";
 import * as React from "react";
 import ReactDOM from "react-dom/client";
 
@@ -11,7 +10,6 @@ const reactRoot = ReactDOM.createRoot(rootElement);
 
 reactRoot.render(
   <React.StrictMode>
-    <CssBaseline />
     <App />
   </React.StrictMode>,
 );

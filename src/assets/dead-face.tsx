@@ -1,23 +1,19 @@
-import { SvgContainer } from "utils";
+import IconContainer from "../components/IconContainer";
 
 const DeadFaceIcon = () => {
   return (
-    <SvgContainer>
-      <svg
-        id="dead-face"
-        viewBox="0 0 72 72"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g id="color">
+    <IconContainer>
+      <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <g>
           <path
             fill="#FCEA2B"
             d="M36,13c-12.6823,0-23,10.3177-23,23c0,12.6822,10.3177,23,23,23c12.6822,0,23-10.3178,23-23 C59,23.3177,48.6822,13,36,13z"
           />
         </g>
-        <g id="hair" />
-        <g id="skin" />
-        <g id="skin-shadow" />
-        <g id="line">
+        <g />
+        <g />
+        <g />
+        <g>
           <circle
             cx="36"
             cy="36"
@@ -86,7 +82,7 @@ const DeadFaceIcon = () => {
           />
         </g>
       </svg>
-    </SvgContainer>
+    </IconContainer>
   );
 };
 

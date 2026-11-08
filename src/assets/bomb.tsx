@@ -1,10 +1,10 @@
-import { SvgContainer } from "utils";
+import IconContainer from "../components/IconContainer";
 
 const BombIcon = () => {
   return (
-    <SvgContainer>
-      <svg id="bomb" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-        <g id="color">
+    <IconContainer>
+      <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <g>
           <rect
             x="42.9998"
             y="15.7214"
@@ -23,10 +23,10 @@ const BombIcon = () => {
             d="M19.6333,55.7374c12.7025,0,23-10.2975,23-23c0-5.5327-1.9548-10.6081-5.2097-14.5762 c9.8615,2.5932,17.1357,11.5674,17.1357,22.2428c0,12.7025-10.2975,23-23,23c-7.1697,0-13.5723-3.2816-17.7903-8.4237 C15.6416,55.4725,17.6063,55.7374,19.6333,55.7374z"
           />
         </g>
-        <g id="hair" />
-        <g id="skin" />
-        <g id="skin-shadow" />
-        <g id="line">
+        <g />
+        <g />
+        <g />
+        <g>
           <polyline
             fill="none"
             stroke="#000000"
@@ -61,7 +61,7 @@ const BombIcon = () => {
           />
         </g>
       </svg>
-    </SvgContainer>
+    </IconContainer>
   );
 };
 
